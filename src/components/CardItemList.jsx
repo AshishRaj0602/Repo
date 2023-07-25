@@ -20,7 +20,7 @@ export const CardItemList = () => {
       const firstCard = cardList.find((card) => card.id === firstCardId);
       const currentCard = cardList.find((card) => card.id === currentId);
 
-      if (firstCard.value === currentCard.value) {
+      if (firstCard.name === currentCard.name) {
         setOpenedCardIds([]);
       } else {
         setTimeout(() => {
